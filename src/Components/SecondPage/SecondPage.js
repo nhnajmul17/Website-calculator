@@ -46,7 +46,7 @@ const SecondPage = () => {
                     <div className='col box-border'>
                         <Row className="g-4">
                             <Col >
-                                <h3 className='fw-bold'>I WANT TO BUILD</h3>
+                                <h5 className='fw-bold'>I WANT TO BUILD</h5>
                                 <Card onClick={() => handleframe('ecommerce')} className='mb-2 text-start ' body><span className='fw-bold'>An ecommerce Site</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
 
                                 <Card onClick={() => handleframe('onlinecourse')} className='mb-2 text-start' body> <span className='fw-bold'>An Online Course Platform</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
@@ -57,15 +57,26 @@ const SecondPage = () => {
 
                             </Col>
                         </Row>
-                        <div className='flex'>
-                            <Link to='/first'>
-                                <Button className='text-info' variant="light">Previous</Button>
-                            </Link>
-                            <ProgressBar variant="info" now={60} />
+                        <div className='row'>
+                            <div className="col">
+                                <Link to='/first'>
+                                    <Button className='text-info' variant="light">Previous</Button>
+                                </Link>
+                            </div>
 
-                            <Link to='/final'>
-                                <Button className='text-info' variant="light">Next</Button>
-                            </Link>
+                            <div className="col mt-3">
+                                <ProgressBar variant="info" now={60} />
+
+                            </div>
+                            <div className="col">
+                                <Link to='/final'>
+                                    <Button className='text-info' variant="light">Next</Button>
+                                </Link>
+
+                            </div>
+
+
+
                         </div>
                     </div>
                     <div className='col p-5'>

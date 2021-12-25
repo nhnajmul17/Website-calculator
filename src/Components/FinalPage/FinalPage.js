@@ -39,11 +39,24 @@ const FinalPage = () => {
 
 
 
-                        <div className='flex'>
-                            <Link to='/second'>  <Button className='text-info' variant="light">Previous</Button> </Link>
-                            <ProgressBar variant="info" now={100} />
+                        <div className='row'>
+                            <div className="col">
 
-                            <Button disabled variant="light">Next</Button>
+                                <Link to='/second'>  <Button className='text-info' variant="light">Previous</Button> </Link>
+
+                            </div>
+                            <div className="col mt-3">
+
+                                <ProgressBar variant="info" now={100} />
+
+                            </div>
+                            <div className="col">
+                                <Button disabled variant="light">Next</Button>
+
+
+                            </div>
+
+
                         </div>
                     </div>
                     <div className='col  m-5 px-5 pt-5'>

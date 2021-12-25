@@ -30,7 +30,7 @@ const FirstPage = () => {
                         <Row className="g-4">
                             <Col>
 
-                                <h3 className='fw-bold'>I WANT MY SITE TO BUILT ON (CHOOSE FRAMEWORK)</h3>
+                                <h6 className='fw-bold'>I WANT MY SITE TO BUILT ON (CHOOSE FRAMEWORK)</h6>
 
 
 
@@ -48,12 +48,23 @@ const FirstPage = () => {
 
                             </Col>
                         </Row>
-                        <div className='flex'>
-                            <Button disabled variant="light">Previous</Button>
-                            <ProgressBar variant="info" now={30} />
-                            <Link to='/second'>
-                                <Button className='text-info' variant="light">Next</Button>
-                            </Link>
+                        <div className='row'>
+                            <div className='col'>
+                                <Button disabled variant="light">Previous</Button>
+                            </div>
+
+                            <div className='col mt-3'>
+                                <ProgressBar variant="info" now={30} />
+
+                            </div>
+
+
+                            <div className='col'>
+                                <Link to='/second'>
+                                    <Button className='text-info' variant="light">Next</Button>
+                                </Link>
+                            </div>
+
                         </div>
                     </div>
                     <div className='col p-5'>
