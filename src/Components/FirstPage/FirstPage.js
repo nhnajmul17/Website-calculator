@@ -9,38 +9,16 @@ import { useDispatch } from 'react-redux';
 
 const FirstPage = () => {
     // const [price, setPrice] = useState(2000)
+    // const [toggle, setToggle] = useState(false)
     const dispatch = useDispatch()
 
 
-    /* const handleFrame = e => {
 
-        if (e === 'python') {
-            setPrice(2000)
-        }
-
-        else if (e === 'wordpress') {
-            setPrice(3000)
-
-        }
-        else if (e === 'phplaravel') {
-            setPrice(3500)
-
-        }
-        else if (e === 'php') {
-            setPrice(4000)
-
-        }
-        else if (e === 'kajabi') {
-            setPrice(4500)
-
-        }
-        dispatch(frameWorkPrice(price))
-        alert(` ${e} Frame work added`)
-
-    } */
-
-    const handleframe = () => {
-        alert('Framework selected Click "Next" for going to next page')
+    const handleframe = (e) => {
+        console.log(e)
+        dispatch(frameWorkPrice(e))
+        alert(`${e} Framework selected Click "Next" for going to next page`)
+        // setToggle(true);
     }
 
 
@@ -50,21 +28,21 @@ const FirstPage = () => {
                 <div className="row">
                     <div className='col box-border'>
                         <Row className="g-4">
-                            <Col onClick={() => handleframe()}>
+                            <Col>
 
                                 <h3 className='fw-bold'>I WANT MY SITE TO BUILT ON (CHOOSE FRAMEWORK)</h3>
 
 
 
-                                <Card onClick={() => dispatch(frameWorkPrice('python'))} className='mb-2 text-start' style={{ textDecoration: 'none' }} body> <span className='fw-bold'>Python</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
+                                <Card onClick={() => handleframe('python')} className='mb-2 text-start ' style={{ textDecoration: 'none' }} body> <span className='fw-bold'>Python</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
 
-                                <Card onClick={() => dispatch(frameWorkPrice('wordpress'))} className='mb-2 text-start' body> <span className='fw-bold'>Word Press</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
+                                <Card onClick={() => handleframe('wordpress')} className='mb-2 text-start ' body> <span className='fw-bold'>Word Press</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
 
-                                <Card onClick={() => dispatch(frameWorkPrice('phplaravel'))} className='mb-2 text-start' body><span className='fw-bold'>Php Laravel</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
+                                <Card onClick={() => handleframe('phplaravel')} className='mb-2 text-start' body><span className='fw-bold'>Php Laravel</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
 
-                                <Card onClick={() => dispatch(frameWorkPrice('php'))} className='mb-2 text-start' body><span className='fw-bold'>Php(from Scratch)</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
+                                <Card onClick={() => handleframe('php')} className='mb-2 text-start' body><span className='fw-bold'>Php(from Scratch)</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
 
-                                <Card onClick={() => dispatch(frameWorkPrice('kajabi'))} className='mb-2 text-start' body><span className='fw-bold'>Kajabi</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
+                                <Card onClick={() => handleframe('kajabi')} className='mb-2 text-start' body><span className='fw-bold'>Kajabi</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
 
 
 

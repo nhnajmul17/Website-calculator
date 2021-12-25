@@ -33,8 +33,9 @@ const SecondPage = () => {
     }
     console.log(price) */
 
-    const handleframe = () => {
-        alert('Website selected Click "Next" for going to next page')
+    const handleframe = (e) => {
+        dispatch(websiteTypePrice(e))
+        alert(`${e} Website selected Click "Next" for going to next page`)
     }
 
 
@@ -44,15 +45,15 @@ const SecondPage = () => {
                 <div className="row">
                     <div className='col box-border'>
                         <Row className="g-4">
-                            <Col onClick={() => handleframe()}>
+                            <Col >
                                 <h3 className='fw-bold'>I WANT TO BUILD</h3>
-                                <Card onClick={() => dispatch(websiteTypePrice('ecommerce'))} className='mb-2 text-start ' body><span className='fw-bold'>An ecommerce Site</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
+                                <Card onClick={() => handleframe('ecommerce')} className='mb-2 text-start ' body><span className='fw-bold'>An ecommerce Site</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
 
-                                <Card onClick={() => dispatch(websiteTypePrice('onlinecourse'))} className='mb-2 text-start' body> <span className='fw-bold'>An Online Course Platform</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
+                                <Card onClick={() => handleframe('onlinecourse')} className='mb-2 text-start' body> <span className='fw-bold'>An Online Course Platform</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
 
-                                <Card onClick={() => dispatch(websiteTypePrice('blog'))} className='mb-2 text-start' body><span className='fw-bold'>A Blog Site</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
+                                <Card onClick={() => handleframe('blog')} className='mb-2 text-start' body><span className='fw-bold'>A Blog Site</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
 
-                                <Card onClick={() => dispatch(websiteTypePrice('company'))} className='mb-2 text-start' body><span className='fw-bold'>My Compnay Site with Plce Calculators</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
+                                <Card onClick={() => handleframe('company')} className='mb-2 text-start' body><span className='fw-bold'>My Compnay Site with Plce Calculators</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
 
                             </Col>
                         </Row>
