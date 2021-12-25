@@ -62,7 +62,7 @@ const FirstPage = () => {
 
                                 <Card onClick={() => dispatch(frameWorkPrice('phplaravel'))} className='mb-2 text-start' body><span className='fw-bold'>Php Laravel</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
 
-                                <Card onClick={() => dispatch(frameWorkPrice('php'))} className='mb-2 text-start' body><span className='fw-bold'>Php(from Sretch)</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
+                                <Card onClick={() => dispatch(frameWorkPrice('php'))} className='mb-2 text-start' body><span className='fw-bold'>Php(from Scratch)</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
 
                                 <Card onClick={() => dispatch(frameWorkPrice('kajabi'))} className='mb-2 text-start' body><span className='fw-bold'>Kajabi</span> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique?</Card>
 

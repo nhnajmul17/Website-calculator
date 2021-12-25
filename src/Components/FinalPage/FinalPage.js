@@ -50,11 +50,11 @@ const FinalPage = () => {
                         <div className='col m-5 '>
                             <Card style={{ width: '22rem' }}>
                                 <Card.Body>
-                                    <Card.Title>Est. Cost</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted">${total}</Card.Subtitle>
+                                    <Card.Subtitle className="mb-2  text-info">Est. Cost</Card.Subtitle>
                                     <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk of
-                                        the card's content.
+                                        <Card.Title className='fw-bold'>${total}</Card.Title>
+
+                                        This cost will include 2 rounds of corrections at UI design stage, and once the design is finalized, we will proceed to developement. Project will be divided into 2-3 milestone payments.
                                     </Card.Text>
 
                                 </Card.Body>
